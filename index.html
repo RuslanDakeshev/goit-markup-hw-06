@@ -478,7 +478,7 @@
 
         <div class="futer-container">
         
-            <h2 class="label-text">Подпишитесь на рассылку</h2>
+            <p class="label-text">Подпишитесь на рассылку</p>
             <form class="futer-label" >
                 <label for="mail" class="label-send" ></label>
                 <input type="mail" name="user-mail" id="mail" placeholder="E-mail" class="futer-label-area" />
@@ -504,8 +504,8 @@
 
 
     </footer>
-                        /*is-hidden*/
-    <div class="backdrop " data-modal>
+                        
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             
             <form class="modal-form">
@@ -513,7 +513,8 @@
                 <label class="modal-label">
                     <span class="name-span">Имя</span>
                     <span class="modal-input-wrapper">
-                <input type="text" name="user-name" required class="modal-input"
+                <input type="text" name="user-name" required class="modal-input" pattern="[a-zA-Z]*"
+                 title="Ruslan"
                 />
             <svg class="modal-input-icon" width="12" height="12">
                 <use href="./images/icons.svg#icon-icon-name-modal"></use>
@@ -524,7 +525,8 @@
                 <label class="modal-label">
                     <span class="name-span">Телефон</span>
                     <span class="modal-input-wrapper">
-                    <input type="tel" name="user-phone" class="modal-input">
+                    <input type="tel" name="user-phone" class="modal-input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                 title="xxx-xxx-xx-xx"/>
                     <svg class="modal-input-icon" width="12" height="12">
                         <use href="./images/icons.svg#icon-icon-tel-modal"></use>
                     </svg>
@@ -548,7 +550,7 @@
 
                         
                         <input type="checkbox" name="user-policy" class="contact-form-checkbox visually-hidden" id="checkbox-policy"">
-                        <label for="checkbox-policy" class="contact-form-checkbox-label">Соглашаюсь с рассылкой и принимаю&nbsp;<a href="" >Условия договора</a>
+                        <label for="checkbox-policy" class="contact-form-checkbox-label" >Соглашаюсь с рассылкой и принимаю&nbsp;<a href="" class="policy-text">Условия договора</a>
                         </label>
 
                         <button type="submit" class="contact-form-btn" >Отправить</button>
